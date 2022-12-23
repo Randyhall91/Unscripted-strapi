@@ -1849,7 +1849,7 @@
 
 "@strapi/provider-upload-aws-s3@^4.5.4":
   version "4.5.4"
-  resolved "https://registry.npmjs.org/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-4.5.4.tgz"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-4.5.4.tgz#9faa66cac6e48a9a0e0d852c57ad8e932cb892ae"
   integrity sha512-vZc5eb2+KSBe1RbFZhIExMCV06/dQX4Iskd61kMR4HENxjYBVugrDVf6C2TieK5nDJ5X9Z9TVyJ8qgptn8wvRg==
   dependencies:
     aws-sdk "2.1260.0"

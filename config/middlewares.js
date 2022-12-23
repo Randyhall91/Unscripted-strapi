@@ -1,36 +1,41 @@
-module.exports = [
-  'strapi::errors',
-  {
-    name: 'strapi::security',
-    config: {
-      contentSecurityPolicy: {
-        useDefaults: true,
-        directives: {
-          'connect-src': ["'self'", 'https:'],
-          'img-src': [
-            "'self'",
-            'data:',
-            'blob:',
-            `https://${process.env.AWS_BUCKET_NAME}.s3.amazonaws.com`,
-          ],
-          'media-src': [
-            "'self'",
-            'data:',
-            'blob:',
-            `https://${process.env.AWS_BUCKET_NAME}.s3.amazonaws.com`,
-          ],
-          upgradeInsecureRequests: null,
+    // ~/strapi-aws-s3/backend/config/middlewares.js
+    
+    module.exports = [
+      'strapi::errors',
+
+      {
+        name: 'strapi::security',
+        config: {
+          contentSecurityPolicy: {
+            useDefaults: true,
+            directives: {
+              'connect-src': ["'self'", 'https:'],
+              'img-src': [
+                "'self'",
+                'data:',
+                'blob:',
+                'dl.airtable.com',
+                `https://unscriptedfamilyphotography.s3.us-west-2.amazonaws.com`,
+              ],
+              'media-src': [
+                "'self'",
+                'data:',
+                'blob:',
+                'dl.airtable.com',
+                `https://unscriptedfamilyphotography.s3.us-west-2.amazonaws.com`,
+              ],
+              upgradeInsecureRequests: null,
+            },
+          },
         },
       },
-    },
-  },
-  'strapi::cors',
-  'strapi::poweredBy',
-  'strapi::logger',
-  'strapi::query',
-  'strapi::body',
-  'strapi::session',
-  'strapi::favicon',
-  'strapi::public',
-];
-
+      /* End of snippet */
+      'strapi::cors',
+      'strapi::poweredBy',
+      'strapi::logger',
+      'strapi::query',
+      'strapi::body',
+      'strapi::session',
+      'strapi::favicon',
+      'strapi::public',
+    ];
