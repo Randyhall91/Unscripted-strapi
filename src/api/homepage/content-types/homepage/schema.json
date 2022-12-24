@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carousel": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "quote": {
+      "type": "string"
+    },
+    "aboutHeader": {
+      "type": "string"
+    },
+    "aboutContent": {
+      "type": "text"
+    },
+    "mugshot": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "aboutLifeStyleHeader": {
+      "type": "string"
+    },
+    "aboutLifeStyleContent": {
+      "type": "text"
+    },
+    "lifeStylePicture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "letsChatHeader": {
+      "type": "string"
+    },
+    "letsChatContent": {
+      "type": "string"
+    }
+  }
+}
